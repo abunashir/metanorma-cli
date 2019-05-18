@@ -60,6 +60,11 @@ module Metanorma
         UI.say("Couldn't load #{type}, please provide a valid type!")
       end
 
+      desc "list-doctypes TYPE", "List supported doctypes"
+      def list_doctypes(type)
+        Template
+      end
+
       private
 
       def single_type_extensions(type)
