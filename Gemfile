@@ -6,6 +6,8 @@ git_source(:github) { |repo| "https://github.com/#{repo}" }
 
 gemspec
 
+gem "fontist", github: "fontist/fontist", ref: "80540f8"
+
 if File.exist? 'Gemfile.devel'
   eval File.read('Gemfile.devel'), nil, 'Gemfile.devel' # rubocop:disable Security/Eval
 end
